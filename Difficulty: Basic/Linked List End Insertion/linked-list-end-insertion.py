@@ -13,7 +13,7 @@ class Solution:
         if head is None:
             return new
         
-        while curr.next:
+        while curr.next is not None:
             curr=curr.next
         curr.next=new
         return head
